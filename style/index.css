@@ -16,6 +16,7 @@
 
 	width: 100vw;
 	max-width: 2048px;
+	min-width: 320px;
 	height: 100vh;
 	font-family: 'Inter', sans-serif;
 	font-size: 18px;
@@ -29,7 +30,10 @@ img {
 /* 320px, 768px, 992px, 1200px, 1536 */
 
 @media (min-width: 1536px) {
-	
+	img {
+		height: 100%;
+		object-fit: contain;
+	}
 }
 @media (max-width: 1200px) {
 	.page-container {
@@ -54,36 +58,31 @@ img {
 	}
 	.pictures-two {
 		grid-area: 3 / 1 / 4 / 6;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(1, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows:	0.8fr 1.2fr;
 	}
 	.picture__girl-curly {
-		grid-area: 6 / 1 / 7 / 2;
+		grid-area: 1 / 1 / 3 / 2;
 	}
 	
 	.picture__girl {
-		grid-area: 6 / 2 / 7 / 3;
+		grid-area: 1 / 2 / 3 / 3;
 	}
 	
 	.picture_red {
-		grid-area: 6 / 3 / 7 / 4;
+		grid-area: 1 / 4 / 2 / 5;
 	}
 	
 	.picture__doorway {
-		grid-area: 6 / 4 / 7 / 5;
+		grid-area: 1 / 3 / 3 / 4;
 	}
 	
 	.picture__man {
-		grid-area: 6 / 5 / 7 / 6;
-	}
-	.header__header {
+		grid-area: 2 / 4 / 3 / 5;
 	}
 }
 @media (max-width: 768px)  {
-	.page-container {
-		
-		
-	}
+	
 	
 }
 @media (min-width: 320px) and (max-width: 640px)  {
