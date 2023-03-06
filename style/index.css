@@ -30,10 +30,7 @@ img {
 /* 320px, 768px, 992px, 1200px, 1536 */
 
 @media (min-width: 1536px) {
-	img {
-		height: 100%;
-		object-fit: contain;
-	}
+	
 }
 @media (max-width: 1200px) {
 	.page-container {
