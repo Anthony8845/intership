@@ -6,20 +6,43 @@
 	grid-template-rows: repeat(5, 1fr);
 }
 
-.girl-hat {
-	grid-area: 1 / 1 / 4 / 3;
-}
-
-.coffee {
-	grid-area: 4 / 1 / 6 / 2;
-}
-
-.coffee  img{
+.pictures-one .img {
 	height: 100%;
 	object-fit: cover;
 }
 
-.coffee-block_bg-brown {
+.pictures-one__girl-hat {
+	grid-area: 1 / 1 / 4 / 3;
+}
+
+.pictures-one__coffee {
+	grid-area: 4 / 1 / 6 / 2;
+}
+
+.pictures-one__coffee  .img{
+	height: 100%;
+	object-fit: cover;
+}
+
+.pictures-one__brown-img {
 	grid-area: 4 / 2 / 6 / 3;
 	background: #A6806B;
+}
+
+.hidden-block {
+	visibility: hidden;
+}
+
+
+
+@media (max-width: 992px) {
+	.pictures-one {
+		grid-area: 1 / 2 / 3 / 3;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 640px)  {
+	.pictures-one {
+		grid-area: 2 / 1 / 3 / 2;
+	}
 }
