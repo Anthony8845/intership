@@ -9,6 +9,7 @@
 	max-width: 2048px;
 	height: 100vh;
 	margin: 0 auto;
+	overflow: hidden;
 
 	font-family: Inter, sans-serif;
 	font-size: 18px;
@@ -27,6 +28,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 2fr 1fr;
 		height: auto;
+		overflow: visible;
 	}
 }
 
